@@ -10,6 +10,8 @@ import CoreData
 import SwiftUI
 import Combine
 
+// LanguageManager is available in the same module
+
 enum CoreDataError: Error, LocalizedError {
     case saveFailed(Error)
     case fetchFailed(Error)
@@ -44,21 +46,21 @@ enum CoreDataError: Error, LocalizedError {
     var recoverySuggestion: String? {
         switch self {
         case .saveFailed:
-            return LanguageManager.shared.localizedString(for: "Try again. If the problem persists, restart the app.")
+            return "Try again. If the problem persists, restart the app."
         case .fetchFailed:
-            return LanguageManager.shared.localizedString(for: "Check your internet connection and try again.")
+            return "Check your internet connection and try again."
         case .deleteFailed:
-            return LanguageManager.shared.localizedString(for: "Try again or restart the app.")
+            return "Try again or restart the app."
         case .validationFailed:
-            return LanguageManager.shared.localizedString(for: "Some data is invalid. Try restarting the app.")
+            return "Some data is invalid. Try restarting the app."
         case .contextError:
-            return LanguageManager.shared.localizedString(for: "Restart the app to restore the database.")
+            return "Restart the app to restore the database."
         case .modelError:
-            return LanguageManager.shared.localizedString(for: "Contact the developer.")
+            return "Contact the developer."
         case .migrationError:
-            return LanguageManager.shared.localizedString(for: "The app is trying to migrate your data. Wait a moment and try again.")
+            return "The app is trying to migrate your data. Wait a moment and try again."
         case .corruptionError:
-            return LanguageManager.shared.localizedString(for: "Your data is corrupted. Restart the app to try to fix this.")
+            return "Your data is corrupted. Restart the app to try to fix this."
         }
     }
 }
@@ -89,8 +91,10 @@ class CoreDataManager {
             storeDescription.setOption(true as NSNumber, forKey: NSPersistentHistoryTrackingKey)
             storeDescription.setOption(true as NSNumber, forKey: NSPersistentStoreRemoteChangeNotificationPostOptionKey)
             
-            // Voeg extra opties toe om entity conflicten te voorkomen
+                    // Voeg extra opties toe om entity conflicten te voorkomen
+        #if os(iOS)
             storeDescription.setOption(true as NSNumber, forKey: NSPersistentStoreFileProtectionKey)
+        #endif
         }
         
         // Initialize context first
@@ -267,20 +271,18 @@ class CoreDataManager {
         settings.rainRuleType = "BOTH"
         settings.rainChanceThreshold = 30.0
         settings.rainAmountThreshold = 0.3
-        settings.rainNotificationMinutes = 10
         
         _ = saveWithRecovery()
         return settings
     }
     
-    func updateAppSettings(useMetricUnits: Bool, weatherCacheTTL: Int32, rainRuleType: String, rainChanceThreshold: Double, rainAmountThreshold: Double, rainNotificationMinutes: Int32 = 10) {
+    func updateAppSettings(useMetricUnits: Bool, weatherCacheTTL: Int32, rainRuleType: String, rainChanceThreshold: Double, rainAmountThreshold: Double) {
         let settings = getAppSettings()
         settings.useMetricUnits = useMetricUnits
         settings.weatherCacheTTL = Int32(weatherCacheTTL)
         settings.rainRuleType = rainRuleType
         settings.rainChanceThreshold = rainChanceThreshold
         settings.rainAmountThreshold = rainAmountThreshold
-        settings.rainNotificationMinutes = Int32(rainNotificationMinutes)
         
         _ = saveWithRecovery()
     }
@@ -317,7 +319,7 @@ class CoreDataManager {
         settings.rainRuleType = "BOTH"
         settings.rainChanceThreshold = 30.0
         settings.rainAmountThreshold = 0.3
-        settings.rainNotificationMinutes = 10
+
         
         _ = saveWithRecovery()
         print("✅ App settings reset to defaults")

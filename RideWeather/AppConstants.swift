@@ -74,8 +74,7 @@ struct AppConstants {
         /// Standaard weather cache TTL in seconden (1 uur)
         static let defaultWeatherCacheTTL: TimeInterval = Time.oneHour
         
-        /// Standaard regen notificatie tijd in minuten
-        static let defaultRainNotificationMinutes = 30
+
         
         /// Minimum regen hoeveelheid drempel in mm
         static let minRainAmountThreshold: Double = 0.1

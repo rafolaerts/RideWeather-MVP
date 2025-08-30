@@ -130,7 +130,7 @@ RideWeather/
 ### In Progress 🔄
 - Performance optimizations for large routes
 - Offline maps support
-- Push notifications for weather warnings
+
 
 ## 🤝 Contributing
 

@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
-        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
-    </entity>
     <entity name="Trip" representedClassName="TripEntity" syncable="YES" codeGenerationType="class">
         <attribute name="arrivalTime" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="averageSpeed" optional="NO" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
@@ -26,8 +23,8 @@
         <attribute name="longitude" optional="NO" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="segmentDistance" optional="NO" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="segmentIndex" optional="NO" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
-        <relationship name="trip" optional="NO" maxCount="1" deletionRule="Nullify" destinationEntity="Trip" inverseName="routePoints" inverseEntity="RoutePoint"/>
-        <relationship name="weatherSnapshots" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="WeatherSnapshot" inverseName="routePoint" inverseEntity="RoutePoint"/>
+        <relationship name="trip" optional="NO" maxCount="1" deletionRule="Nullify" destinationEntity="Trip" inverseName="routePoints" inverseEntity="Trip"/>
+        <relationship name="weatherSnapshots" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="WeatherSnapshot" inverseName="routePoint" inverseEntity="WeatherSnapshot"/>
     </entity>
     <entity name="WeatherSnapshot" representedClassName="WeatherSnapshotEntity" syncable="YES" codeGenerationType="class">
         <attribute name="chanceOfRain" optional="NO" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
@@ -53,13 +50,11 @@
         <attribute name="pointDensity" optional="NO" attributeType="Integer 32" defaultValueString="10" usesScalarValueType="YES"/>
         <attribute name="rainAmountThreshold" optional="NO" attributeType="Double" defaultValueString="0.5" usesScalarValueType="YES"/>
         <attribute name="rainChanceThreshold" optional="NO" attributeType="Double" defaultValueString="50.0" usesScalarValueType="YES"/>
-        <attribute name="rainNotificationMinutes" optional="NO" attributeType="Integer 32" defaultValueString="10" usesScalarValueType="YES"/>
         <attribute name="rainRuleType" optional="NO" attributeType="String" defaultValueString="BOTH"/>
         <attribute name="useMetricUnits" optional="NO" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
         <attribute name="weatherCacheTTL" optional="NO" attributeType="Integer 32" defaultValueString="3600" usesScalarValueType="YES"/>
     </entity>
     <elements>
-        <element name="Item" positionX="-63" positionY="-18" width="128" height="44"/>
         <element name="Trip" positionX="-63" positionY="0" width="128" height="164"/>
         <element name="RoutePoint" positionX="0" positionY="0" width="128" height="164"/>
         <element name="WeatherSnapshot" positionX="63" positionY="0" width="128" height="164"/>

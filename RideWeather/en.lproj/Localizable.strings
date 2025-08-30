@@ -47,13 +47,7 @@
 "Rain amount threshold" = "Rain amount threshold";
 "Minimum rain amount (mm) to mark as 'bad weather'" = "Minimum rain amount (mm) to mark as 'bad weather'";
 
-"Rain notification" = "Rain notification";
-"When you want to be warned about rain" = "When you want to be warned about rain";
-"Notification time" = "Notification time";
-"5 minutes before departure" = "5 minutes before departure";
-"10 minutes before departure" = "10 minutes before departure";
-"15 minutes before departure" = "15 minutes before departure";
-"30 minutes before departure" = "30 minutes before departure";
+
 
 // General Settings
 "GENERAL SETTINGS" = "GENERAL SETTINGS";
@@ -417,3 +411,6 @@
 "Your API key appears to be invalid" = "Your API key appears to be invalid";
 "API key configured" = "API key configured";
 "Weather functionality is available" = "Weather functionality is available";
+
+// MARK: - Privacy Policy
+"Privacy Policy" = "Privacy Policy";

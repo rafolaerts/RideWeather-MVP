@@ -245,7 +245,7 @@ GPX files can have **many waypoints**. Reading them all is slow. So we will **sk
 ## 12. Enhancements (v2)
 
 1. **FE-001: Live Weather Alerts**
-   - Push notifications for weather changes
+   
    - Real-time weather updates during trips
 
 2. **FE-004: Offline Maps**

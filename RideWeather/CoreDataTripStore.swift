@@ -283,26 +283,24 @@ class CoreDataTripStore {
     
     // MARK: - Settings Integration
     
-    func getAppSettings() -> (useMetricUnits: Bool, weatherCacheTTL: Int, rainRuleType: String, rainChanceThreshold: Double, rainAmountThreshold: Double, rainNotificationMinutes: Int) {
+    func getAppSettings() -> (useMetricUnits: Bool, weatherCacheTTL: Int, rainRuleType: String, rainChanceThreshold: Double, rainAmountThreshold: Double) {
         let settings = coreDataManager.getAppSettings()
         return (
             useMetricUnits: settings.useMetricUnits,
             weatherCacheTTL: Int(settings.weatherCacheTTL),
             rainRuleType: settings.rainRuleType ?? "BOTH",
             rainChanceThreshold: settings.rainChanceThreshold,
-            rainAmountThreshold: settings.rainAmountThreshold,
-            rainNotificationMinutes: Int(settings.rainNotificationMinutes)
+            rainAmountThreshold: settings.rainAmountThreshold
         )
     }
     
-    func updateAppSettings(useMetricUnits: Bool, weatherCacheTTL: Int32, rainRuleType: String, rainChanceThreshold: Double, rainAmountThreshold: Double, rainNotificationMinutes: Int32 = 10) {
+    func updateAppSettings(useMetricUnits: Bool, weatherCacheTTL: Int32, rainRuleType: String, rainChanceThreshold: Double, rainAmountThreshold: Double) {
         coreDataManager.updateAppSettings(
             useMetricUnits: useMetricUnits,
             weatherCacheTTL: weatherCacheTTL,
             rainRuleType: rainRuleType,
             rainChanceThreshold: rainChanceThreshold,
-            rainAmountThreshold: rainAmountThreshold,
-            rainNotificationMinutes: rainNotificationMinutes
+            rainAmountThreshold: rainAmountThreshold
         )
     }
     

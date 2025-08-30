@@ -17,6 +17,7 @@ enum WeatherError: Error, LocalizedError {
     case timeout
     case rateLimitExceeded
     case invalidAPIKey
+    case noAPIKey
     case locationServiceError(Error)
     
     var errorDescription: String? {
@@ -42,6 +43,8 @@ enum WeatherError: Error, LocalizedError {
             return LanguageManager.shared.localizedString(for: "Too many API calls, try again later")
         case .invalidAPIKey:
             return LanguageManager.shared.localizedString(for: "Invalid API key")
+        case .noAPIKey:
+            return LanguageManager.shared.localizedString(for: "No API key configured")
         case .locationServiceError(let error):
             return LanguageManager.shared.localizedString(for: "Location service error: \(error.localizedDescription)")
         }
@@ -57,6 +60,8 @@ enum WeatherError: Error, LocalizedError {
             return LanguageManager.shared.localizedString(for: "Wait a few minutes before trying again")
         case .invalidAPIKey:
             return LanguageManager.shared.localizedString(for: "Contact the developer")
+        case .noAPIKey:
+            return LanguageManager.shared.localizedString(for: "Please configure your API key in Settings")
         case .apiError(let code, _):
             if code >= 500 {
                 return LanguageManager.shared.localizedString(for: "Server problem, try again later")

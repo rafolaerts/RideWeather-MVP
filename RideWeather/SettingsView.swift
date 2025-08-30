@@ -9,7 +9,7 @@ struct SettingsView: View {
     @State private var rainRuleType = "BOTH"
     @State private var rainChanceThreshold = 50.0
     @State private var rainAmountThreshold = 0.3
-    @State private var rainNotificationMinutes = 10
+
     
     // API key management
     @State private var apiKey = ""
@@ -26,12 +26,7 @@ struct SettingsView: View {
         ("AMOUNT_ONLY", "Rain amount only".localized)
     ]
     
-    private let rainNotificationOptions = [
-        (5, "5 minutes before departure".localized),
-        (10, "10 minutes before departure".localized),
-        (15, "15 minutes before departure".localized),
-        (30, "30 minutes before departure".localized)
-    ]
+
     
     var body: some View {
         NavigationView {
@@ -153,21 +148,7 @@ struct SettingsView: View {
                             .onChange(of: rainAmountThreshold) { _, _ in saveSettingsToCoreData() }
                     }
                     
-                    VStack(alignment: .leading, spacing: 8) {
-                        Text("Rain notification".localized)
-                            .font(.headline)
-                        Text("When you want to be warned about rain".localized)
-                            .font(.caption)
-                            .foregroundColor(.secondary)
-                    }
-                    
-                    Picker("Notification time".localized, selection: $rainNotificationMinutes) {
-                        ForEach(rainNotificationOptions, id: \.0) { value, description in
-                            Text(description).tag(value)
-                        }
-                    }
-                    .pickerStyle(.menu)
-                    .onChange(of: rainNotificationMinutes) { _, _ in saveSettingsToCoreData() }
+
                 }
                 
                 Section(header: Text("GENERAL SETTINGS".localized)) {
@@ -217,6 +198,18 @@ struct SettingsView: View {
                         Spacer()
                         Text("1")
                             .foregroundColor(.secondary)
+                    }
+                    
+                    NavigationLink(destination: PrivacyPolicyView()) {
+                        HStack {
+                            Image(systemName: "hand.raised")
+                                .foregroundColor(.blue)
+                            Text("Privacy Policy".localized)
+                            Spacer()
+                            Image(systemName: "chevron.right")
+                                .foregroundColor(.secondary)
+                                .font(.caption)
+                        }
                     }
                 }
                 
@@ -288,7 +281,7 @@ struct SettingsView: View {
             rainRuleType: rainRuleType,
             rainChanceThreshold: rainChanceThreshold,
             rainAmountThreshold: rainAmountThreshold,
-            rainNotificationMinutes: Int32(rainNotificationMinutes)
+    
         )
     }
     
@@ -300,7 +293,7 @@ struct SettingsView: View {
         rainRuleType = settings.rainRuleType
         rainChanceThreshold = settings.rainChanceThreshold
         rainAmountThreshold = settings.rainAmountThreshold
-        rainNotificationMinutes = settings.rainNotificationMinutes
+
         
         // Load API key from Core Data
         apiKey = coreDataStore.getAPIKey() ?? ""

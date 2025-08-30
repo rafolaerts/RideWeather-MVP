@@ -64,7 +64,7 @@ Download RideWeather today and make informed decisions about your motorcycle rid
 ---
 
 ## 🏷️ Keywords (100 characters)
-motorcycle, weather, route, GPX, riding, weather forecast, bike weather, weather app, motorcycle route, weather app
+motorcycle, weather, route, GPX, riding, weather forecast, motorcycle weather, weather app, motorcycle route, weather app
 
 ---
 

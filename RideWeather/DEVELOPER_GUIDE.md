@@ -468,7 +468,7 @@ enum CoreDataError: Error, LocalizedError {
 ## Future Improvements
 
 ### Planned Features
-- **Push notifications** for weather warnings
+
 - **Offline maps** support
 - **Route sharing** functionality
 - **Weather history** analysis

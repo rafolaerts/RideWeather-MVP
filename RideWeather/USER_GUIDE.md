@@ -124,7 +124,7 @@ Go to **Settings** to configure rain focus:
 ### Rain Focus Settings
 - **Rain rule type**: Flexible criteria configuration
 - **Threshold values**: Customizable limits for warnings
-- **Notification timing**: How many minutes in advance to warn
+
 
 ### Privacy & Location
 - **Location permissions**: Always when in use
@@ -194,7 +194,7 @@ Go to **Settings** to configure rain focus:
 - ✅ Offline functionality
 
 ### Planned Improvements
-- 🔄 Notifications for bad weather
+- 
 - 🔄 Offline maps support
 - 🔄 Route sharing functionality
 - 🔄 Weather history analysis

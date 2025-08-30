@@ -47,13 +47,7 @@
 "Rain amount threshold" = "Regenhoeveelheid drempel";
 "Minimum rain amount (mm) to mark as 'bad weather'" = "Minimum regenhoeveelheid (mm) om als 'slecht weer' te markeren";
 
-"Rain notification" = "Regen notificatie";
-"When you want to be warned about rain" = "Wanneer je gewaarschuwd wilt worden voor regen";
-"Notification time" = "Notificatie tijd";
-"5 minutes before departure" = "5 minuten voor vertrek";
-"10 minutes before departure" = "10 minuten voor vertrek";
-"15 minutes before departure" = "15 minuten voor vertrek";
-"30 minutes before departure" = "30 minuten voor vertrek";
+
 
 // General Settings
 "GENERAL SETTINGS" = "ALGEMENE INSTELLINGEN";
@@ -417,3 +411,6 @@
 "Your API key appears to be invalid" = "Je API sleutel lijkt ongeldig te zijn";
 "API key configured" = "API sleutel geconfigureerd";
 "Weather functionality is available" = "Weer functionaliteit is beschikbaar";
+
+// MARK: - Privacy Policy
+"Privacy Policy" = "Privacybeleid";

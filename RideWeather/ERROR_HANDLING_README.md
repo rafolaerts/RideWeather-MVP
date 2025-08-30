@@ -131,7 +131,7 @@ enum CoreDataError: Error, LocalizedError {
 ### 1. Network Monitoring
 - Real-time network status monitoring
 - Automatic detection of network issues
-- User notifications for network problems
+
 
 ### 2. Retry Mechanisms
 - Automatic retry for temporary errors

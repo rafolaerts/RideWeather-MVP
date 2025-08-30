@@ -72,6 +72,11 @@ class WeatherService {
     
     /// Haal weer data op voor een specifiek route punt met One Call API 3.0
     func fetchWeather(for routePoint: RoutePoint, at time: Date) async throws -> WeatherSnapshot {
+        // Controleer of er een API key is geconfigureerd
+        guard !apiKey.isEmpty else {
+            throw WeatherError.noAPIKey
+        }
+        
         // Controleer netwerk beschikbaarheid
         guard isNetworkAvailable else {
             throw WeatherError.networkError(.noConnection)
