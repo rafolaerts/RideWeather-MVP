@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
+    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="Trip" representedClassName="TripEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="arrivalTime" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="averageSpeed" optional="NO" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="createdAt" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="date" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="distance" optional="NO" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="gpxFileName" optional="NO" attributeType="String"/>
+        <attribute name="id" optional="NO" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="NO" attributeType="String"/>
+        <attribute name="rainFocusEnabled" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="startTime" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="updatedAt" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="routePoints" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="RoutePoint" inverseName="trip" inverseEntity="RoutePoint"/>
+        <relationship name="weatherData" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="WeatherSnapshot" inverseName="trip" inverseEntity="WeatherSnapshot"/>
+    </entity>
+    <entity name="RoutePoint" representedClassName="RoutePointEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="distanceFromStart" optional="NO" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="estimatedPassTime" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="NO" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="latitude" optional="NO" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" optional="NO" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="segmentDistance" optional="NO" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="segmentIndex" optional="NO" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="trip" optional="NO" maxCount="1" deletionRule="Nullify" destinationEntity="Trip" inverseName="routePoints" inverseEntity="RoutePoint"/>
+        <relationship name="weatherSnapshots" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="WeatherSnapshot" inverseName="routePoint" inverseEntity="RoutePoint"/>
+    </entity>
+    <entity name="WeatherSnapshot" representedClassName="WeatherSnapshotEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="chanceOfRain" optional="NO" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="dataSource" optional="YES" attributeType="String"/>
+        <attribute name="fetchTime" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="humidity" optional="NO" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="icon" optional="NO" attributeType="String" defaultValueString="questionmark.circle"/>
+        <attribute name="id" optional="NO" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="latitude" optional="NO" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" optional="NO" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="placeName" optional="YES" attributeType="String"/>
+        <attribute name="rainAmount" optional="NO" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="temperature" optional="NO" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="weatherDescription" optional="NO" attributeType="String"/>
+        <attribute name="windDirection" optional="NO" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="windSpeed" optional="NO" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="routePoint" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RoutePoint" inverseName="weatherSnapshots" inverseEntity="RoutePoint"/>
+        <relationship name="trip" optional="NO" maxCount="1" deletionRule="Nullify" destinationEntity="Trip" inverseName="weatherData" inverseEntity="Trip"/>
+    </entity>
+    <entity name="AppSettings" representedClassName="AppSettingsEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="NO" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="apiKey" optional="YES" attributeType="String"/>
+        <attribute name="pointDensity" optional="NO" attributeType="Integer 32" defaultValueString="10" usesScalarValueType="YES"/>
+        <attribute name="rainAmountThreshold" optional="NO" attributeType="Double" defaultValueString="0.5" usesScalarValueType="YES"/>
+        <attribute name="rainChanceThreshold" optional="NO" attributeType="Double" defaultValueString="50.0" usesScalarValueType="YES"/>
+        <attribute name="rainNotificationMinutes" optional="NO" attributeType="Integer 32" defaultValueString="10" usesScalarValueType="YES"/>
+        <attribute name="rainRuleType" optional="NO" attributeType="String" defaultValueString="BOTH"/>
+        <attribute name="useMetricUnits" optional="NO" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="weatherCacheTTL" optional="NO" attributeType="Integer 32" defaultValueString="3600" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="Item" positionX="-63" positionY="-18" width="128" height="44"/>
+        <element name="Trip" positionX="-63" positionY="0" width="128" height="164"/>
+        <element name="RoutePoint" positionX="0" positionY="0" width="128" height="164"/>
+        <element name="WeatherSnapshot" positionX="63" positionY="0" width="128" height="164"/>
+        <element name="AppSettings" positionX="126" positionY="0" width="128" height="119"/>
+    </elements>
+</model>

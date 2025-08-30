@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Test GPX Creator" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <name>Test Route - Alpine Pass</name>
+    <desc>Een test route door de Alpen</desc>
+    <time>2025-01-27T10:00:00Z</time>
+  </metadata>
+  
+  <trk>
+    <name>Alpine Route</name>
+    <trkseg>
+      <trkpt lat="46.9481" lon="7.4474">
+        <ele>542</ele>
+        <time>2025-01-27T09:00:00Z</time>
+        <name>Start - Bern</name>
+      </trkpt>
+      
+      <trkpt lat="46.9500" lon="7.4500">
+        <ele>545</ele>
+        <time>2025-01-27T09:05:00Z</time>
+      </trkpt>
+      
+      <trkpt lat="46.9550" lon="7.4600">
+        <ele>550</ele>
+        <time>2025-01-27T09:10:00Z</time>
+      </trkpt>
+      
+      <trkpt lat="46.9600" lon="7.4700">
+        <ele>560</ele>
+        <time>2025-01-27T09:15:00Z</time>
+      </trkpt>
+      
+      <trkpt lat="46.9650" lon="7.4800">
+        <ele>580</ele>
+        <time>2025-01-27T09:20:00Z</time>
+      </trkpt>
+      
+      <trkpt lat="46.9700" lon="7.4900">
+        <ele>600</ele>
+        <time>2025-01-27T09:25:00Z</time>
+      </trkpt>
+      
+      <trkpt lat="46.9750" lon="7.5000">
+        <ele>620</ele>
+        <time>2025-01-27T09:30:00Z</time>
+      </trkpt>
+      
+      <trkpt lat="46.9800" lon="7.5100">
+        <ele>650</ele>
+        <time>2025-01-27T09:35:00Z</time>
+      </trkpt>
+      
+      <trkpt lat="46.9850" lon="7.5200">
+        <ele>680</ele>
+        <time>2025-01-27T09:40:00Z</time>
+      </trkpt>
+      
+      <trkpt lat="46.9900" lon="7.5300">
+        <ele>720</ele>
+        <time>2025-01-27T09:45:00Z</time>
+      </trkpt>
+      
+      <trkpt lat="46.9950" lon="7.5400">
+        <ele>750</ele>
+        <time>2025-01-27T09:50:00Z</time>
+      </trkpt>
+      
+      <trkpt lat="47.0000" lon="7.5500">
+        <ele>800</ele>
+        <time>2025-01-27T09:55:00Z</time>
+      </trkpt>
+      
+      <trkpt lat="47.0050" lon="7.5600">
+        <ele>850</ele>
+        <time>2025-01-27T10:00:00Z</time>
+      </trkpt>
+      
+      <trkpt lat="47.0100" lon="7.5700">
+        <ele>900</ele>
+        <time>2025-01-27T10:05:00Z</time>
+      </trkpt>
+      
+      <trkpt lat="47.0150" lon="7.5800">
+        <ele>950</ele>
+        <time>2025-01-27T10:10:00Z</time>
+      </trkpt>
+      
+      <trkpt lat="47.0200" lon="7.5900">
+        <ele>1000</ele>
+        <time>2025-01-27T10:15:00Z</time>
+      </trkpt>
+      
+      <trkpt lat="47.0250" lon="7.6000">
+        <ele>1050</ele>
+        <time>2025-01-27T10:20:00Z</time>
+      </trkpt>
+      
+      <trkpt lat="47.0300" lon="7.6100">
+        <ele>1100</ele>
+        <time>2025-01-27T10:25:00Z</time>
+      </trkpt>
+      
+      <trkpt lat="47.0350" lon="7.6200">
+        <ele>1150</ele>
+        <time>2025-01-27T10:30:00Z</time>
+      </trkpt>
+      
+      <trkpt lat="47.0400" lon="7.6300">
+        <ele>1200</ele>
+        <time>2025-01-27T10:35:00Z</time>
+      </trkpt>
+      
+      <trkpt lat="47.0450" lon="7.6400">
+        <ele>1250</ele>
+        <time>2025-01-27T10:40:00Z</time>
+      </trkpt>
+      
+      <trkpt lat="47.0500" lon="7.6500">
+        <ele>1300</ele>
+        <time>2025-01-27T10:45:00Z</time>
+        <name>Einde - Alpine Pass</name>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

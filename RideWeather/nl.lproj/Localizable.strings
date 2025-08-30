@@ -1,0 +1,419 @@
+/* 
+  Localizable.strings (Dutch)
+  RideWeather
+  
+  Created by Raf Olaerts on 26/08/2025.
+*/
+
+// MARK: - Tab Bar
+"Trips" = "Trips";
+"Error Handling" = "Foutafhandeling";
+"DEBUG" = "DEBUG";
+"Developer tools" = "Ontwikkelaar tools";
+"Advanced debugging and testing tools for developers" = "Geavanceerde debugging en test tools voor ontwikkelaars";
+"Weather API Debug" = "Weer API Debug";
+
+// MARK: - Trip List View
+"RideWeather" = "RideWeather";
+"No trips yet" = "Nog geen trips";
+"Add your first motorcycle trip to view weather along your route" = "Voeg je eerste motorfiets trip toe om het weer langs je route te bekijken";
+
+// MARK: - Sort Options
+"Date (newest first)" = "Datum (nieuwste eerst)";
+"Date (oldest first)" = "Datum (oudste eerst)";
+"Name (A-Z)" = "Naam (A-Z)";
+"Name (Z-A)" = "Naam (Z-A)";
+"Distance (longest first)" = "Afstand (langste eerst)";
+"Distance (shortest first)" = "Afstand (kortste eerst)";
+"Time (longest first)" = "Tijd (langste eerst)";
+"Time (shortest first)" = "Tijd (kortste eerst)";
+
+// MARK: - Settings
+"Settings" = "Instellingen";
+"Done" = "Gereed";
+
+// Weather Settings
+"WEATHER SETTINGS" = "WEER INSTELLINGEN";
+"Rain marking rule" = "Regen markering regel";
+"Determine when a route is marked as 'bad weather'" = "Bepaal wanneer een route als 'slecht weer' wordt gemarkeerd";
+"Rain rule type" = "Regen regel type";
+"Rain chance AND amount" = "Regenkans EN hoeveelheid";
+"Rain chance only" = "Alleen regenkans";
+"Rain amount only" = "Alleen regenhoeveelheid";
+
+"Rain chance threshold" = "Regenkans drempel";
+"Minimum rain chance (%) to mark as 'bad weather'" = "Minimum regenkans (%) om als 'slecht weer' te markeren";
+
+"Rain amount threshold" = "Regenhoeveelheid drempel";
+"Minimum rain amount (mm) to mark as 'bad weather'" = "Minimum regenhoeveelheid (mm) om als 'slecht weer' te markeren";
+
+"Rain notification" = "Regen notificatie";
+"When you want to be warned about rain" = "Wanneer je gewaarschuwd wilt worden voor regen";
+"Notification time" = "Notificatie tijd";
+"5 minutes before departure" = "5 minuten voor vertrek";
+"10 minutes before departure" = "10 minuten voor vertrek";
+"15 minutes before departure" = "15 minuten voor vertrek";
+"30 minutes before departure" = "30 minuten voor vertrek";
+
+// General Settings
+"GENERAL SETTINGS" = "ALGEMENE INSTELLINGEN";
+"Metric units" = "Metrische eenheden";
+"Use kilometers and Celsius instead of miles and Fahrenheit" = "Gebruik kilometers en Celsius in plaats van mijlen en Fahrenheit";
+
+// Language Settings
+"LANGUAGE SETTINGS" = "TAAL INSTELLINGEN";
+"App language" = "App taal";
+"Choose the language for the app interface" = "Kies de taal voor de app interface";
+"Dutch" = "Nederlands";
+"English" = "Engels";
+
+// App Information
+"APP INFORMATION" = "APP INFORMATIE";
+"Version" = "Versie";
+"Build" = "Build";
+
+// MARK: - Add Trip View
+"Add Trip" = "Trip Toevoegen";
+"Trip name" = "Trip naam";
+"Enter trip name" = "Voer trip naam in";
+"Start location" = "Start locatie";
+"Enter start location" = "Voer start locatie in";
+"Destination" = "Bestemming";
+"Enter destination" = "Voer bestemming in";
+"Start time" = "Vertrektijd";
+"Arrival time" = "Aankomsttijd";
+"Add waypoint" = "Wegpunt toevoegen";
+"Remove waypoint" = "Wegpunt verwijderen";
+"Plan route" = "Route plannen";
+"Cancel" = "Annuleren";
+"Save" = "Opslaan";
+
+// MARK: - Trip Detail View
+"Trip Details" = "Trip Details";
+"Distance" = "Afstand";
+"Duration" = "Duur";
+"Start" = "Start";
+"End" = "Einde";
+"Route point" = "Route punt";
+"Edit trip" = "Trip bewerken";
+"Delete trip" = "Trip verwijderen";
+"Are you sure you want to delete this trip?" = "Weet je zeker dat je deze trip wilt verwijderen?";
+"Delete" = "Verwijderen";
+
+// MARK: - Route Planning
+"Route planning..." = "Route plannen...";
+"Route planned successfully" = "Route succesvol gepland";
+"Failed to plan route" = "Route plannen mislukt";
+"Current location" = "Huidige locatie";
+"Use current location" = "Huidige locatie gebruiken";
+"Location permission required" = "Locatie toestemming vereist";
+"Please enable location access in Settings" = "Schakel locatie toegang in via Instellingen";
+
+// MARK: - Weather
+"Weather data" = "Weer gegevens";
+"Temperature" = "Temperatuur";
+"Rain chance" = "Regenkans";
+"Rain amount" = "Regenhoeveelheid";
+"Good weather" = "Goed weer";
+
+// MARK: - Edit Trip View
+"Distance: %.1f %@" = "Afstand: %.1f %@";
+"Avg. speed: %.0f %@" = "Gem. snelheid: %.0f %@";
+"route points" = "route punten";
+"New GPX file is being loaded..." = "Nieuw GPX bestand wordt geladen...";
+"New GPX file selected:" = "Nieuw GPX bestand geselecteerd:";
+
+// MARK: - Error Handling View
+"Weather Service Error Handling" = "Weather Service Error Handling";
+"Network Status" = "Netwerk Status";
+"Available" = "Beschikbaar";
+"Not available" = "Niet beschikbaar";
+"Last Error" = "Laatste Fout";
+"Test Network Error" = "Test Network Error";
+"Core Data Error Handling" = "Core Data Error Handling";
+"Core Data Status" = "Core Data Status";
+"Ready" = "Gereed";
+"Loading..." = "Laden...";
+"Recovery Suggestion" = "Recovery Suggestie";
+"No suggestion" = "Geen suggestie";
+"Validate Data" = "Valideer Data";
+"Try Recovery" = "Probeer Recovery";
+
+// MARK: - Route Planner View
+"Route Planning" = "Route Plannen";
+"Plan Route" = "Route Plannen";
+
+// MARK: - Route Preview View
+"Route Preview" = "Route Preview";
+"Map" = "Kaart";
+"Details" = "Details";
+
+// MARK: - GPX Preview View
+"GPX Preview" = "GPX Preview";
+"Route Information" = "Route Informatie";
+"Filename" = "Bestandsnaam";
+"Total distance" = "Totale afstand";
+"Route Points" = "Route Punten";
+"Elevation: %dm" = "Hoogte: %dm";
+
+// MARK: - Weather Service
+"No internet connection available" = "Geen internetverbinding beschikbaar";
+
+// MARK: - Weather Helpers
+"Unknown" = "Onbekend";
+"Unknown location" = "Onbekende locatie";
+"No weather data available" = "Geen weer data beschikbaar";
+
+// MARK: - Weather Errors
+"Invalid response from weather service" = "Ongeldige response van weer service";
+"Weather service error %d: %@" = "Weer service fout %d: %@";
+"Weather service error: %d" = "Weer service fout: %d";
+"Network error: %@" = "Netwerk fout: %@";
+"Invalid URL for weather API" = "Ongeldige URL voor weer API";
+"Error decoding weather data: %@" = "Fout bij decoderen van weer data: %@";
+"Timeout while fetching weather data" = "Timeout bij ophalen weer data";
+"Too many API calls, try again later" = "Te veel API calls, probeer het later opnieuw";
+"Invalid API key" = "Ongeldige API sleutel";
+"Location service error: %@" = "Locatie service fout: %@";
+"Check your internet connection and try again" = "Controleer je internetverbinding en probeer het opnieuw";
+"The server is responding slowly, try again later" = "De server reageert traag, probeer het later opnieuw";
+"Wait a few minutes before trying again" = "Wacht enkele minuten voordat je het opnieuw probeert";
+"Contact the developer" = "Neem contact op met de ontwikkelaar";
+"Server problem, try again later" = "Server probleem, probeer het later opnieuw";
+"Authentication error, contact the developer" = "Authenticatie fout, neem contact op met de ontwikkelaar";
+"Try again later" = "Probeer het later opnieuw";
+"Try again" = "Probeer het opnieuw";
+"No internet connection" = "Geen internetverbinding";
+"Connection lost" = "Verbinding verbroken";
+"Server unreachable" = "Server niet bereikbaar";
+"DNS lookup failed" = "DNS lookup mislukt";
+"SSL/TLS error" = "SSL/TLS fout";
+"Unknown network error: %@" = "Onbekende netwerk fout: %@";
+
+// MARK: - Core Data Errors
+"Try again. If the problem persists, restart the app." = "Probeer het opnieuw. Als het probleem aanhoudt, herstart de app.";
+"Try again or restart the app." = "Probeer het opnieuw of herstart de app.";
+"Some data is invalid. Try restarting the app." = "Sommige data is ongeldig. Probeer de app te herstarten.";
+"Restart the app to restore the database." = "Herstart de app om de database te herstellen.";
+"Contact the developer." = "Neem contact op met de ontwikkelaar.";
+"The app is trying to migrate your data. Wait a moment and try again." = "De app probeert je data te migreren. Wacht even en probeer het opnieuw.";
+"Your data is corrupted. Restart the app to try to fix this." = "Je data is beschadigd. Herstart de app om te proberen dit op te lossen.";
+
+// MARK: - Error Handling
+"Error Recovery Actions" = "Foutherstel Acties";
+"Clear All Errors" = "Alle Fouten Wissen";
+"Refresh Context" = "Context Vernieuwen";
+"Test Save Recovery" = "Test Opslaan Herstel";
+"Test network error - no internet connection" = "Test netwerk fout - geen internetverbinding";
+"✅ All data is valid" = "✅ Alle data is geldig";
+"❌ Validation errors found:" = "❌ Validatie fouten gevonden:";
+"✅ Recovery successful" = "✅ Recovery succesvol";
+"❌ Recovery failed" = "❌ Recovery mislukt";
+"✅ Save recovery successful" = "✅ Save recovery succesvol";
+"❌ Save recovery failed" = "❌ Save recovery mislukt";
+
+// MARK: - Tab Bar
+"Trips" = "Ritten";
+"Error Handling" = "Foutafhandeling";
+
+// MARK: - Add Trip
+"GPX Import" = "GPX Import";
+"Route Planning" = "Route Planning";
+"Add Trip" = "Rit Toevoegen";
+"Cancel" = "Annuleren";
+"5 points (very few)" = "5 punten (zeer weinig)";
+"10 points (standard)" = "10 punten (standaard)";
+"15 points (medium)" = "15 punten (gemiddeld)";
+"20 points (many)" = "20 punten (veel)";
+"25 points (very many)" = "25 punten (zeer veel)";
+"Trip Information" = "Rit Informatie";
+"Trip name:" = "Rit naam:";
+"Enter trip name" = "Voer rit naam in";
+"Date:" = "Datum:";
+"Start time:" = "Start tijd:";
+"Arrival time:" = "Aankomst tijd:";
+"ROUTE FILE" = "ROUTE BESTAND";
+"GPX file loaded:" = "GPX bestand geladen:";
+"Total distance:" = "Totale afstand:";
+"Estimated avg. speed:" = "Geschatte gem. snelheid:";
+"waypoints found" = "waypoints gevonden";
+"route points used" = "route punten gebruikt";
+"Route points setting" = "Route punten instelling";
+"More points mean more detailed route but slower processing" = "Meer punten betekenen gedetailleerdere route maar langzamere verwerking";
+"Number of route points" = "Aantal route punten";
+"Select different GPX file" = "Selecteer ander GPX bestand";
+"Select GPX File" = "Selecteer GPX Bestand";
+
+// MARK: - Settings
+"Rain chance AND amount" = "Regenkans EN hoeveelheid";
+"Rain chance only" = "Alleen regenkans";
+"Rain amount only" = "Alleen regenhoeveelheid";
+"5 minutes before departure" = "5 minuten voor vertrek";
+"10 minutes before departure" = "10 minuten voor vertrek";
+"15 minutes before departure" = "15 minuten voor vertrek";
+"30 minutes before departure" = "30 minuten voor vertrek";
+"WEATHER SETTINGS" = "WEER INSTELLINGEN";
+"Rain marking rule" = "Regen markering regel";
+"Determine when a route is marked as 'bad weather'" = "Bepaal wanneer een route wordt gemarkeerd als 'slecht weer'";
+"Rain rule type" = "Regen regel type";
+"Rain chance threshold" = "Regenkans drempel";
+"Minimum rain chance (%) to mark as 'bad weather'" = "Minimale regenkans (%) om te markeren als 'slecht weer'";
+"Rain amount threshold" = "Regenhoeveelheid drempel";
+"Minimum rain amount (mm) to mark as 'bad weather'" = "Minimale regenhoeveelheid (mm) om te markeren als 'slecht weer'";
+"Rain notification" = "Regen notificatie";
+"When you want to be warned about rain" = "Wanneer je gewaarschuwd wilt worden over regen";
+"Notification time" = "Notificatie tijd";
+"GENERAL SETTINGS" = "ALGEMENE INSTELLINGEN";
+"Metric units" = "Metrische eenheden";
+"Use kilometers and Celsius instead of miles and Fahrenheit" = "Gebruik kilometers en Celsius in plaats van mijlen en Fahrenheit";
+"LANGUAGE SETTINGS" = "TAAL INSTELLINGEN";
+"App language" = "App taal";
+"Choose the language for the app interface" = "Kies de taal voor de app interface";
+"APP INFORMATION" = "APP INFORMATIE";
+"Version" = "Versie";
+"Build" = "Build";
+"Settings" = "Instellingen";
+"Done" = "Klaar";
+"Language changed" = "Taal gewijzigd";
+"The app language has been changed. Restart the app to apply all changes." = "De app taal is gewijzigd. Herstart de app om alle wijzigingen toe te passen.";
+
+// MARK: - Trip List
+"Date (newest first)" = "Datum (nieuwste eerst)";
+"Date (oldest first)" = "Datum (oudste eerst)";
+"Name (A-Z)" = "Naam (A-Z)";
+"Name (Z-A)" = "Naam (Z-A)";
+"Distance (longest first)" = "Afstand (langste eerst)";
+"Distance (shortest first)" = "Afstand (kortste eerst)";
+"Time (longest first)" = "Tijd (langste eerst)";
+"Time (shortest first)" = "Tijd (kortste eerst)";
+"RideWeather" = "RideWeather";
+"No trips yet" = "Nog geen ritten";
+"Add your first motorcycle trip to view weather along your route" = "Voeg je eerste motorrit toe om het weer langs je route te bekijken";
+"Sort" = "Sorteren";
+
+// MARK: - Route Point
+"No weather data" = "Geen weer data";
+
+// MARK: - Route Map
+"Route Overview" = "Route Overzicht";
+
+// MARK: - Location
+"Unknown location" = "Onbekende locatie";
+
+// MARK: - Weather Status
+"High chance of rain" = "Hoge kans op regen";
+"Cold temperature" = "Koude temperatuur";
+"Good weather" = "Goed weer";
+
+// MARK: - Time Units
+"h" = "u";
+"m" = "m";
+
+// MARK: - Error Handling Settings
+"ERROR HANDLING" = "FOUTAFHANDELING";
+"Error management" = "Foutbeheer";
+"Monitor and resolve app errors and data issues" = "Bewaak en los app fouten en data problemen op";
+"Open Error Handling" = "Open Foutafhandeling";
+"Bad weather" = "Slecht weer";
+
+// MARK: - Common
+"OK" = "OK";
+"Error" = "Fout";
+"Warning" = "Waarschuwing";
+"Information" = "Informatie";
+"Loading..." = "Laden...";
+"Retry" = "Opnieuw proberen";
+"Close" = "Sluiten";
+
+// MARK: - Language Change Alert
+"Language changed" = "Taal gewijzigd";
+"The app language has been changed. Restart the app to apply all changes." = "De app taal is gewijzigd. Start de app opnieuw op om alle wijzigingen toe te passen.";
+
+// MARK: - Trip List Actions
+"Sort" = "Sorteren";
+"Edit" = "Bewerken";
+"High chance of rain" = "Hoge kans op regen";
+
+// MARK: - Add Trip View
+"GPX Import" = "GPX Import";
+"Route Planning" = "Route Plannen";
+"Route Type" = "Route Type";
+
+// Trip Information
+"Trip Information" = "Trip Informatie";
+"Trip name:" = "Trip naam:";
+"Enter trip name" = "Voer trip naam in";
+"Date:" = "Datum:";
+"Start time:" = "Start tijd:";
+"Arrival time:" = "Aankomst tijd:";
+
+// Route File
+"ROUTE FILE" = "ROUTE BESTAND";
+"GPX file loaded: %@" = "GPX bestand geladen: %@";
+"Total distance: %.1f km" = "Totale afstand: %.1f km";
+"Estimated avg. speed: %.0f %@" = "Geschatte gem. snelheid: %.0f %@";
+"waypoints found" = "waypoints gevonden";
+"route points used" = "route punten gebruikt";
+
+// Route Points
+"Route points setting" = "Route punten instelling";
+"More points mean more detailed route but slower processing" = "Hoe meer punten, hoe gedetailleerder de route maar ook langzamer de verwerking";
+"Number of route points" = "Aantal route punten";
+"5 points (very few)" = "5 punten (zeer weinig)";
+"10 points (standard)" = "10 punten (standaard)";
+"15 points (medium)" = "15 punten (gemiddeld)";
+"20 points (many)" = "20 punten (veel)";
+"25 points (very many)" = "25 punten (zeer veel)";
+
+// Actions
+"Select different GPX file" = "Ander GPX bestand selecteren";
+"Select GPX File" = "GPX Bestand Selecteren";
+
+// Error Messages
+"Error selecting file: %@" = "Fout bij het selecteren van bestand: %@";
+"Error reprocessing GPX file: %@" = "Fout bij herverwerken van GPX bestand: %@";
+
+// MARK: - Trip Detail View
+"Edit Trip" = "Trip Bewerken";
+"Rain Focus" = "Regen Focus";
+"Refresh" = "Vernieuwen";
+"No route points" = "Geen route punten";
+"Route points are calculated after GPX import" = "Route punten worden berekend na GPX import";
+
+// MARK: - Route Point Row
+"No weather data" = "Geen weer data";
+
+// MARK: - Trip Summary Card
+"Start" = "Start";
+"Distance" = "Afstand";
+"Arrival" = "Aankomst";
+"Average speed" = "Gemiddelde snelheid";
+"Route file" = "Route bestand";
+
+// Weather Status
+"Chance of rain" = "Kans op regen";
+
+// MARK: - API Configuration
+"API CONFIGURATION" = "API CONFIGURATIE";
+"OpenWeatherMap API Key" = "OpenWeatherMap API Sleutel";
+"Enter your own OpenWeatherMap API key for weather data" = "Voer je eigen OpenWeatherMap API sleutel in voor weer data";
+"API Key" = "API Sleutel";
+"Get Free Key" = "Gratis Sleutel";
+"Enter your API key here" = "Voer je API sleutel hier in";
+"Save API Key" = "API Sleutel Opslaan";
+"Remove API Key" = "API Sleutel Verwijderen";
+"Current Key" = "Huidige Sleutel";
+"Invalid API Key Format" = "Ongeldig API Sleutel Formaat";
+"OpenWeatherMap API keys must be exactly 32 characters long." = "OpenWeatherMap API sleutels moeten precies 32 karakters lang zijn.";
+"API Key Saved" = "API Sleutel Opgeslagen";
+"Your OpenWeatherMap API key has been saved successfully." = "Je OpenWeatherMap API sleutel is succesvol opgeslagen.";
+"API Key Removed" = "API Sleutel Verwijderd";
+"Your OpenWeatherMap API key has been removed. The app will use the default API key if available." = "Je OpenWeatherMap API sleutel is verwijderd. De app zal de standaard API sleutel gebruiken indien beschikbaar.";
+
+// MARK: - API Key Warning Banner
+"Weather functionality limited" = "Weer functionaliteit beperkt";
+"No OpenWeatherMap API key configured" = "Geen OpenWeatherMap API sleutel geconfigureerd";
+"Invalid API key detected" = "Ongeldige API sleutel gedetecteerd";
+"Your API key appears to be invalid" = "Je API sleutel lijkt ongeldig te zijn";
+"API key configured" = "API sleutel geconfigureerd";
+"Weather functionality is available" = "Weer functionaliteit is beschikbaar";
